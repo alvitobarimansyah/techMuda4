@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Nilai</title>
+        <script src="js/form.js"></script>
+    </head>
+    <body>
+        <form id="formNilaiSiswa">
+            <table align="center"  width="40%" cellpadding="20" cellspacing="0">
+                <thead>
+                    <tr bgcolor="aqua">
+                        <th colspan="2">Form Nilai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr bgcolor="azure">
+                        <td>Nama</td>
+                        <td>
+                            <input type="text" name="namaSiswa" value="">
+                        </td>
+                    </tr>
+                    <tr bgcolor="azure">
+                        <td>Materi</td>
+                        <td>
+                            <select name="mapel">
+                                <option value="">-- Pilih Materi --</option>
+                                <option value="Matematika">Matematika</option>
+                                <option value="Fisika">Fisika</option>
+                                <option value="PKN">PKN</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr bgcolor="azure">
+                        <td>Nilai</td>
+                        <td>
+                            <input type="text" name="nilaiSiswa" value="">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr bgcolor="darkcyan">
+                        <th colspan="2">
+                            <input type="button" onclick="penilaian()" name="proses" value="Simpan">
+                            <input type="reset" name="unproses" value="Batal">
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>

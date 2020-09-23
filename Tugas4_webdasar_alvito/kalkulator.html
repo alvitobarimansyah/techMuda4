@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Calculator</title>
+        <script src="js/kalkulator.js"></script>
+    </head>
+    <body>
+        <form id="htmlKalkulator">
+            <table align="center" width="40%" cellpadding="20" cellspacing="0">
+                <thead>
+                    <tr bgcolor="aqua">
+                        <th colspan="2">Kalkulatorku</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr bgcolor="azure">
+                        <td width="30%">Angka 1</td>
+                        <td>
+                            <input type="text" name="firstNumber" value="">
+                        </td>
+                    </tr>
+                    <tr bgcolor="azure">
+                        <td>Angka 2</td>
+                        <td>
+                            <input type="text" name="secondNumber" value="">
+                        </td>
+                    </tr>
+                    <tr bgcolor="azure">
+                        <td>Hasil</td>
+                        <td>
+                            <input type="text" name="result" value="" disabled>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr bgcolor="darkcyan">
+                        <th colspan="2">
+                            <input type="button" onclick="tambah()" name="operatorPlus" value="+">
+                            <input type="button" onclick="kurang()" name="operatorMinus" value="-">
+                            <input type="button" onclick="kali()" name="operatorKali" value="X">
+                            <input type="button" onclick="bagi()" name="operatorBagi" value="/">
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>
