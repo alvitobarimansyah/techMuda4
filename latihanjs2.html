@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Register Produk</title>
+        <script src="js/skripku.js"></script>
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function(){
+                alert("Selamat Belajar Jquery");
+            });
+        </script>
+    </head>
+    <body>
+        <form id="produk">
+            <table align="center" cellpadding="10">
+                <thead>
+                    <tr bgcolor="aqua">
+                        <th colspan="2">Form Register Produk</th>
+                    </tr>  
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="40%">Nama Produk</td>
+                        <td>
+                            <input type="text" name="nama" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Produk</td>
+                        <td>
+                            <select name="jenis">
+                                <option value="">-- Pilih Kategori Produk --</option>
+                                <option value="Elektronik">Elektronik</option>
+                                <option value="Furniture">Furniture</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Harga</td>
+                        <td>
+                            <input type="text" name="harga" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah</td>
+                        <td>
+                            <input type="text" name="jumlah" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Total Harga</td>
+                        <td>
+                            <input type="text" name="tohar" value="" disabled>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr bgcolor="darkcyan">
+                        <th colspan="2">
+                            <input type="button" onclick="pembelian()" name="proses" value="kirim">
+                            <input type="reset" name="unproses" value="batal">
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>

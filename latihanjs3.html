@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Jqurey</title>
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function(){
+                $("input").click(function(){
+                    alert("Assalamualaikum");
+                });
+                $("marquee").mouseover(function(){
+                    this.stop();
+                });
+                $("marquee").mouseout(function(){
+                    this.start();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="proses" value="salam">
+        </form>
+        <marquee>
+            <img src="images/1.jpg" width="20%">
+        </marquee>
+    </body>
+</html>

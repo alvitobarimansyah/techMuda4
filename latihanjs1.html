@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan 1 JS</title>
+    </head>
+    <body>
+        <script language="javascript">
+            alert("Selamat Belajar Javascript");
+            //deklarasi dan inisialisasi variabel
+            var nama = "Budi Santoso";
+            var umur = 25;
+            var beratBadan = 70.5;
+            var gender = "L";
+            var Jabatan = "Manager";
+            //logic struktur if
+            /*
+            if (gender == "L") {
+                var panggilan = "Mas";
+            } else {
+                var panggilan = "Mba";
+            }
+            */
+            //ternary
+            var panggilan = (gender == "L") ? "Mas" : "Mba";
+            // multi kondisi
+            if (umur >= 0 && umur <= 5) var kategori = "Balita";
+            else if(umur > 5 && umur <= 12) var kategori = "Anak-Anak";
+            else if(umur > 12 && umur <= 17) var kategori = "Remaja";
+            else if(umur > 17 && umur <= 40) var kategori = "Dewasa";
+            else if(umur > 40) var kategori ="Sudah Tidak Muda";
+            else var kategori = "";
+            switch (Jabatan) {
+                case "Staff": var gapok = 5000000; break;
+                case "SuperVisor": var gapok = 8000000; break;
+                case "Manager": var gapok = 15000000; break;
+                case "General Manager": var gapok = 20000000; break;
+                default: break;
+            }
+            //cetak data
+            document.write(
+                "Nama Pegawai : " + panggilan + " " + nama + 
+                "<br>Umur : " + umur + " tahun " +
+                "<br>Kategori : " + kategori +
+                "<br>Berat Badan : " + beratBadan + " kg " +
+                "<br>Jabatan : " + Jabatan +
+                "<br>Gaji Pokok : Rp. " + gapok 
+            )
+        </script>
+    </body>
+</html>

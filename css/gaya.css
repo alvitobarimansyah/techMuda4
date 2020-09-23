@@ -1,0 +1,65 @@
+body{
+    background-color: #26EECA;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+/* paragraf*/
+p{
+    text-align: justify;
+    font-size: 12pt;
+    color: #312B11;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*fieldset*/
+fieldset{
+    border: 5px ridge #E68B22;
+    border-radius: 50px;
+    background-image: linear-gradient(red, white,darkblue);
+}
+
+/*legend*/
+legend{
+    border: 2px orangered double;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    background-color: darkcyan;
+    color: azure;
+}
+
+h1{
+    color: blue;
+    text-shadow: 10px 10px aqua;
+}
+
+.p2::first-letter{
+    font-size: 60pt;
+    color: blueviolet;
+    float: left;
+    padding-right: 5px;
+}
+
+div#menu{
+    text-align: center;
+}
+a:link,a:visited,a:active{
+    text-decoration: none;
+    font-size: 16pt;
+    color: crimson;
+    border: 1px solid yellow;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 25px;
+}
+
+a:hover{
+    text-decoration: none;
+    font-size: 32pt;
+    color: crimson;
+    border: 1px solid rebeccapurple;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 55px;
+}

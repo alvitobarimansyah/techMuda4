@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Jquery</title>
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function () {
+                $(".flip").click(function(){
+                    $(".pesan").slideToggle("fast"); 
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="pesan" style="border: crimson 1px dotted; padding: 10px; background-color: chartreuse;">
+            wasalam
+        </div>
+        <br>
+        <div class="flip" style="background-color: cyan; padding: 10px; border: 1px solid blue;">
+            Show/Hidden
+        </div>
+    </body>
+</html>
